@@ -118,7 +118,7 @@ class VideoProcessor:
 # ==============================================================================
 
 def main():
-    st.title("😺 Gato Detector")
+    st.title("😺 Detector de Gatinhos")
 
     # Layout de Colunas: [Vídeo (maior)] | [Imagem Reativa (menor)]
     col_cam, col_img = st.columns([2, 1])

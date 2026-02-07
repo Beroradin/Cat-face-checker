@@ -127,8 +127,16 @@ def main():
         ctx = webrtc_streamer(
             key="cat-face-mobile",
             mode=WebRtcMode.SENDRECV,
-            rtc_configuration=RTC_CONFIGURATION,
-            media_stream_constraints={"video": {"facingMode": "user"}, "audio": False},
+            rtc_configuration=RTC_CONFIGURATION, # Se não usar Twilio, mantenha o do Google
+            media_stream_constraints={
+                "video": {
+                    "facingMode": "user",
+                    # Removemos exigências de frame rate/tamanho para compatibilidade máxima
+                    "width": {"ideal": 480}, 
+                    "height": {"ideal": 640} 
+                }, 
+                "audio": False
+            },
             video_processor_factory=VideoProcessor,
             async_processing=True,
         )

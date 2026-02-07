@@ -16,7 +16,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 # 1. CONFIGURAÇÃO DA PÁGINA
 # ==============================================================================
 st.set_page_config(
-    page_title="Gato Detector 😺",
+    page_title="Detector de Gatinhos 😺",
     page_icon="😺",
     layout="wide", # Layout wide facilita colocar coisas lado a lado
     initial_sidebar_state="collapsed"

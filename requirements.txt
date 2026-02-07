@@ -1,11 +1,8 @@
 streamlit
-streamlit-webrtc
-# OpenCV headless para servidor
-opencv-python-headless
-# Usar versão específica do mediapipe que é estável no Linux/Cloud
-mediapipe>=0.10.0
-# Evitar conflitos de protobuf pinando uma versão compatível
-protobuf>=3.20,<4
 numpy
-Pillow
 av
+# Usamos uma versão específica do MediaPipe que é super estável
+mediapipe==0.10.14
+# Forçamos o headless e evitamos que o mediapipe puxe a versão completa
+opencv-python-headless
+streamlit-webrtc
